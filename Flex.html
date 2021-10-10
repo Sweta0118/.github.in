@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<head>
+    <title>CSS Flex</title>
+    <style>
+        .content {
+            background-color: green;
+        }
+        
+        .row {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -moz-box-orient: horizontal;
+            box-orient: horizontal;
+            flex-direction: row;
+            -webkit-box-pack: center;
+            -moz-box-pack: center;
+            box-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -moz-box-align: center;
+            box-align: center;
+            align-items: center;
+        }
+        
+        .cell {
+            -webkit-box-flex: 1;
+            -moz-box-flex: 1;
+            box-flex: 1;
+            -webkit-flex: 1 1 auto;
+            flex: 1 1 auto;
+            padding: 10px;
+            border: solid 10px red;
+            text-align: center;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            box-sizing: content-box;
+        }
+        
+        .img {
+            margin: auto;
+            width: 100%;
+            max-width: 200px;
+            max-height: 100%
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="row">
+            <div class="cell">
+                <img height ="300px"width="300px" src="https://i.pinimg.com/736x/36/86/d5/3686d50fe8f869c350f575821b3f515b.jpg"/>
+            </div>
+            <div class="cell">
+                <img height ="300px" width="300px" src="https://i.pinimg.com/originals/a7/0f/a2/a70fa29cbdd07046f782ba7ac952a2af.jpg"/>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
